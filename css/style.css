@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playwrite DE Grund', sans-serif;
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h5{
+    font-size: 20px
+}
+h6{
+    font-weight: 700;
+    color: #222;
+}
+.sec-p1{
+    padding: 40px 80px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#Sprod{
+    margin-bottom: 120px;
+} 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a{
+    font-size: 18px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 35px;
+    transition: 0.4s ease;
+}
+
+nav a:hover, 
+nav a.active {
+    color:#257c76;
+}
+
+section{
+    min-height: 100vh;
+}
+
+
+header img{
+    height: 64px;
+    width: 80px;
+}
+
+.opcs{
+    display: flex;
+    margin-left: 300px;
+    gap: 80px;
+}
+.opcs h4{
+    margin-top: 25px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.opcs a{
+    text-decoration: none;
+}
+
+header hr{
+    text-align: center;
+    margin-top: -2px;
+    height: 1px;
+    background: black;
+}
+
+.produtos h2{
+    text-align: center;
+    font-size: 40px;
+}
+.produtos hr{
+    height: 1px;
+    width: 60%;
+    background: black;
+    border: 2px;
+    padding: 1.5px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Pitens {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 10px;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-size: 18px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top right, red, black) 1;
+    border-radius: 20px;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background: white;
+    padding: 20px;  
+    margin-top: 110px;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top right, red, black) 1;
+    border-radius: 20px;
+}
+
+.overlay-content button{
+    background: rgb(199, 12, 12);
+    border-radius: 20px;
+    width: 750px;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.overlay-content button:hover{
+    background: rgb(255, 0, 0);
+}
+
+.overlay-content img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.contents{
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: auto;
+}
+/*--------------------------------------------*/
+
+.overlay-slides {
+    position: relative;
+    margin: auto;
+}
+
+.overlay-slide {
+    display: none;
+    align-content: center;
+}
+
+.overlay-slide.active {
+    display: block;
+}
+
+.overlay-dot {
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.overlay-dot.active {
+    background-color: black;
+}
+
+.overlay-dotSlide {
+    display: flex;
+    align-items: center;  
+}
+
+/*=======Footer=========*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    background-color: #e3e6f3;
+    text-decoration: none;
+}
+footer .coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    background-color: #e3e6f3;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+.infos{
+    display: flex;
+}
+
+.line{
+    height: 3px;
+    background: black;
+}
+
+.inform {
+    text-align: center;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.inform h3 {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#inst{
+    margin-left: -40px;
+    color: black;
+}
+
+#inst i{
+    font-size: 30px;
+}
+
+#met{
+    text-align: left;
+    margin-right: 20px;
+}
+
+.pags-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.pags-imgs img {
+    width: 110px;
+    height: 40px;
+}
+
+.seg img{
+    width: 80px;
+    height: 60px;
+}
+
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 50px;
+}
+.fa-whatsapp  {
+    color:#fff;
+    background:
+     linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat,
+     radial-gradient(#25d366 60%,transparent 0);
+}
+
+footer .links-icones{
+    margin-top: 20px;
+}
+
+footer .links-icones i{
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .links-icones h4{
+    justify-content: space-between;
+}
+.instalink{
+    text-decoration: none;
+    color:#222
+}
+.instalink:hover{
+    color: #615454;
+}
+
+#Sbout{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+#Sbout img{
+    width: 40%;
+    height: auto;
+    border: 6px solid #db9292;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    border-radius: 25px;
+}
+#Sbout div{
+    padding-left: 40px;
+}
+
+.sobre span{
+    color: #615454;
+    font-size: 16px;
+}
+.sobre h2{
+    padding-bottom: 10px;
+}
+
